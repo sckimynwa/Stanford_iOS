@@ -11,7 +11,8 @@ import SwiftUI
 struct Memorize_HomeworkApp: App {
     var body: some Scene {
         WindowGroup {
-            MemoryGameView()
+            let game = MemoryGameViewModel()
+            MemoryGameView(viewModel: game)
         }
     }
 }
