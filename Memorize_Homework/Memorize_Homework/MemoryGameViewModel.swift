@@ -11,14 +11,35 @@ class MemoryGameViewModel: ObservableObject {
     @Published private var model: MemoryGame<String> = MemoryGameViewModel.createMemoryGame()
     
     static func createMemoryGame() -> MemoryGame<String> {
-        let contentArr: Array<String> = ["👻", "🎃", "🕸"]
-        return MemoryGame(numOfCardPairs: contentArr.count){
+        let theme: Theme = getTheme()
+        let contentArr: Array<String> = Array(theme.themeArr[0..<Int.random(in: 2...theme.themeArr.count)])
+        
+        return MemoryGame(numOfCardPairs: contentArr.count, theme: theme) {
             pairIndex in return contentArr[pairIndex]
         }
     }
     
+    /* private func */
+    private static func getTheme() -> Theme {
+        switch MemoryGameTheme.allCases.randomElement() {
+            case .HalloWeen:
+                return HalloWeenTheme()
+            case .Vehicle:
+                return VehicleTheme()
+            case .Food:
+                return FoodTheme()
+            default:
+                return AnimalTheme()
+        }
+    }
+    
+    /* view uses */
     var cards: Array<MemoryGame<String>.Card> {
         model.cards
+    }
+    
+    var theme: Theme {
+        model.theme
     }
     
     func choose(card: MemoryGame<String>.Card) {

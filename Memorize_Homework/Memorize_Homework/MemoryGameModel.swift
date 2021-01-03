@@ -9,6 +9,7 @@ import Foundation
 
 struct MemoryGame<CardContent> where CardContent: Equatable {
     var cards: Array<Card>
+    var theme: Theme
     var indexOfTheOneAndOnlyFaceUpCard: Int? {
         get{ cards.indices.filter{ cards[$0].isFaceUp }.only }
         set{
@@ -33,8 +34,9 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
         }
     }
     
-    init(numOfCardPairs: Int, createCardContent: (Int) -> CardContent) {
+    init(numOfCardPairs: Int, theme createdTheme: Theme ,createCardContent: (Int) -> CardContent) {
         cards = Array<Card>()
+        theme = createdTheme
         for pairIndex in 0..<numOfCardPairs {
             let content = createCardContent(pairIndex)
             cards.append(Card(id: pairIndex * 2, content: content, isFaceUp: false, isMatched: false))

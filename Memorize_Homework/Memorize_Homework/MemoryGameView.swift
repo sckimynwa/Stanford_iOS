@@ -18,7 +18,7 @@ struct MemoryGameView: View {
             .padding(5)
         }
         .padding()
-        .foregroundColor(Color.blue)
+        .foregroundColor(viewModel.theme.color)
     }
 }
 
