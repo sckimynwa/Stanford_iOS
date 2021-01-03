@@ -42,6 +42,10 @@ class MemoryGameViewModel: ObservableObject {
         model.theme
     }
     
+    var score: Int {
+        model.score
+    }
+    
     func choose(card: MemoryGame<String>.Card) {
         model.choose(card: card)
     }

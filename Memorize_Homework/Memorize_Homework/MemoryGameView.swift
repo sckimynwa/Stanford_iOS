@@ -13,7 +13,7 @@ struct MemoryGameView: View {
     var body: some View {
         VStack(alignment: .leading, content: {
             TitleView(theme: viewModel.theme)
-            ScoreView()
+            ScoreView(score: viewModel.score)
             Grid(viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
                     viewModel.choose(card: card)
@@ -38,10 +38,11 @@ struct TitleView: View {
 }
 
 struct ScoreView: View {
+    var score: Int
     var body: some View {
         HStack {
             Spacer()
-            Text("Point")
+            Text("\(score) Point")
                 .font(.subheadline)
                 .padding(.trailing, 30)
                 .padding(.top, 10)
