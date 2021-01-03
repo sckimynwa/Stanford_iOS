@@ -11,14 +11,41 @@ struct MemoryGameView: View {
     @ObservedObject var viewModel: MemoryGameViewModel
     
     var body: some View {
-        Grid(viewModel.cards) { card in
-            CardView(card: card).onTapGesture {
-                viewModel.choose(card: card)
+        VStack(alignment: .leading, content: {
+            TitleView(theme: viewModel.theme)
+            ScoreView()
+            Grid(viewModel.cards) { card in
+                CardView(card: card).onTapGesture {
+                    viewModel.choose(card: card)
+                }
+                .padding(5)
             }
-            .padding(5)
+            .padding()
+            .foregroundColor(viewModel.theme.color)
+            FooterView(resetGame: viewModel.reset)
+        })
+    }
+}
+
+struct TitleView: View {
+    var theme: Theme
+    var body: some View {
+        Text("\(theme.name) Theme")
+            .font(.headline)
+            .padding(.leading, 30)
+            .padding(.top, 30)
+    }
+}
+
+struct ScoreView: View {
+    var body: some View {
+        HStack {
+            Spacer()
+            Text("Point")
+                .font(.subheadline)
+                .padding(.trailing, 30)
+                .padding(.top, 10)
         }
-        .padding()
-        .foregroundColor(viewModel.theme.color)
     }
 }
 
@@ -49,5 +76,20 @@ struct CardView: View {
     
     func fontSize(for size: CGSize) -> CGFloat {
         min(size.width, size.height) * fontScaleFactor
+    }
+}
+
+struct FooterView: View {
+    var resetGame: () -> Void
+    var body: some View {
+        HStack {
+            Spacer()
+            Button(action: {
+                print("Button Clicked!")
+                resetGame()
+            }){ Text("New Game")}
+                .padding(.trailing, 30)
+                .padding(.bottom, 30)
+        }
     }
 }
