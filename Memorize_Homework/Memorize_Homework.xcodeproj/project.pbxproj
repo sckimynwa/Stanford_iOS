@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D32D00A25A02603001EE55D /* Memorize_hwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D32D00925A02603001EE55D /* Memorize_hwApp.swift */; };
-		6D32D00C25A02603001EE55D /* NumberMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D32D00B25A02603001EE55D /* NumberMemoryGameView.swift */; };
-		6D32D00E25A02604001EE55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D32D00D25A02604001EE55D /* Assets.xcassets */; };
-		6D32D01125A02604001EE55D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D32D01025A02604001EE55D /* Preview Assets.xcassets */; };
-		6D32D01A25A02B5F001EE55D /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D32D01925A02B5F001EE55D /* MemoryGame.swift */; };
-		6D32D01D25A02D0E001EE55D /* NumberMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D32D01C25A02D0E001EE55D /* NumberMemoryGame.swift */; };
+		6D6DEAD925A1AC1F006F88EA /* Memorize_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6DEAD825A1AC1F006F88EA /* Memorize_HomeworkApp.swift */; };
+		6D6DEADB25A1AC1F006F88EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6DEADA25A1AC1F006F88EA /* ContentView.swift */; };
+		6D6DEADD25A1AC22006F88EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6DEADC25A1AC22006F88EA /* Assets.xcassets */; };
+		6D6DEAE025A1AC22006F88EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6DEADF25A1AC22006F88EA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D32D00625A02603001EE55D /* Memorize_hw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize_hw.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D32D00925A02603001EE55D /* Memorize_hwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorize_hwApp.swift; sourceTree = "<group>"; };
-		6D32D00B25A02603001EE55D /* NumberMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryGameView.swift; sourceTree = "<group>"; };
-		6D32D00D25A02604001EE55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6D32D01025A02604001EE55D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6D32D01225A02604001EE55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D32D01925A02B5F001EE55D /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
-		6D32D01C25A02D0E001EE55D /* NumberMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryGame.swift; sourceTree = "<group>"; };
+		6D6DEAD525A1AC1F006F88EA /* Memorize_Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize_Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6DEAD825A1AC1F006F88EA /* Memorize_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorize_HomeworkApp.swift; sourceTree = "<group>"; };
+		6D6DEADA25A1AC1F006F88EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D6DEADC25A1AC22006F88EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D6DEADF25A1AC22006F88EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D6DEAE125A1AC22006F88EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D32D00325A02603001EE55D /* Frameworks */ = {
+		6D6DEAD225A1AC1F006F88EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,40 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D32CFFD25A02603001EE55D = {
+		6D6DEACC25A1AC1F006F88EA = {
 			isa = PBXGroup;
 			children = (
-				6D32D00825A02603001EE55D /* Memorize_hw */,
-				6D32D00725A02603001EE55D /* Products */,
+				6D6DEAD725A1AC1F006F88EA /* Memorize_Homework */,
+				6D6DEAD625A1AC1F006F88EA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6D32D00725A02603001EE55D /* Products */ = {
+		6D6DEAD625A1AC1F006F88EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D32D00625A02603001EE55D /* Memorize_hw.app */,
+				6D6DEAD525A1AC1F006F88EA /* Memorize_Homework.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6D32D00825A02603001EE55D /* Memorize_hw */ = {
+		6D6DEAD725A1AC1F006F88EA /* Memorize_Homework */ = {
 			isa = PBXGroup;
 			children = (
-				6D32D00925A02603001EE55D /* Memorize_hwApp.swift */,
-				6D32D00B25A02603001EE55D /* NumberMemoryGameView.swift */,
-				6D32D01C25A02D0E001EE55D /* NumberMemoryGame.swift */,
-				6D32D01925A02B5F001EE55D /* MemoryGame.swift */,
-				6D32D00D25A02604001EE55D /* Assets.xcassets */,
-				6D32D01225A02604001EE55D /* Info.plist */,
-				6D32D00F25A02604001EE55D /* Preview Content */,
+				6D6DEAD825A1AC1F006F88EA /* Memorize_HomeworkApp.swift */,
+				6D6DEADA25A1AC1F006F88EA /* ContentView.swift */,
+				6D6DEADC25A1AC22006F88EA /* Assets.xcassets */,
+				6D6DEAE125A1AC22006F88EA /* Info.plist */,
+				6D6DEADE25A1AC22006F88EA /* Preview Content */,
 			);
-			path = Memorize_hw;
+			path = Memorize_Homework;
 			sourceTree = "<group>";
 		};
-		6D32D00F25A02604001EE55D /* Preview Content */ = {
+		6D6DEADE25A1AC22006F88EA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				6D32D01025A02604001EE55D /* Preview Assets.xcassets */,
+				6D6DEADF25A1AC22006F88EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -78,38 +72,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6D32D00525A02603001EE55D /* Memorize_hw */ = {
+		6D6DEAD425A1AC1F006F88EA /* Memorize_Homework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D32D01525A02604001EE55D /* Build configuration list for PBXNativeTarget "Memorize_hw" */;
+			buildConfigurationList = 6D6DEAE425A1AC22006F88EA /* Build configuration list for PBXNativeTarget "Memorize_Homework" */;
 			buildPhases = (
-				6D32D00225A02603001EE55D /* Sources */,
-				6D32D00325A02603001EE55D /* Frameworks */,
-				6D32D00425A02603001EE55D /* Resources */,
+				6D6DEAD125A1AC1F006F88EA /* Sources */,
+				6D6DEAD225A1AC1F006F88EA /* Frameworks */,
+				6D6DEAD325A1AC1F006F88EA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Memorize_hw;
-			productName = Memorize_hw;
-			productReference = 6D32D00625A02603001EE55D /* Memorize_hw.app */;
+			name = Memorize_Homework;
+			productName = Memorize_Homework;
+			productReference = 6D6DEAD525A1AC1F006F88EA /* Memorize_Homework.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6D32CFFE25A02603001EE55D /* Project object */ = {
+		6D6DEACD25A1AC1F006F88EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					6D32D00525A02603001EE55D = {
+					6D6DEAD425A1AC1F006F88EA = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 6D32D00125A02603001EE55D /* Build configuration list for PBXProject "Memorize_hw" */;
+			buildConfigurationList = 6D6DEAD025A1AC1F006F88EA /* Build configuration list for PBXProject "Memorize_Homework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,44 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 6D32CFFD25A02603001EE55D;
-			productRefGroup = 6D32D00725A02603001EE55D /* Products */;
+			mainGroup = 6D6DEACC25A1AC1F006F88EA;
+			productRefGroup = 6D6DEAD625A1AC1F006F88EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D32D00525A02603001EE55D /* Memorize_hw */,
+				6D6DEAD425A1AC1F006F88EA /* Memorize_Homework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6D32D00425A02603001EE55D /* Resources */ = {
+		6D6DEAD325A1AC1F006F88EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D32D01125A02604001EE55D /* Preview Assets.xcassets in Resources */,
-				6D32D00E25A02604001EE55D /* Assets.xcassets in Resources */,
+				6D6DEAE025A1AC22006F88EA /* Preview Assets.xcassets in Resources */,
+				6D6DEADD25A1AC22006F88EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6D32D00225A02603001EE55D /* Sources */ = {
+		6D6DEAD125A1AC1F006F88EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D32D01A25A02B5F001EE55D /* MemoryGame.swift in Sources */,
-				6D32D01D25A02D0E001EE55D /* NumberMemoryGame.swift in Sources */,
-				6D32D00C25A02603001EE55D /* NumberMemoryGameView.swift in Sources */,
-				6D32D00A25A02603001EE55D /* Memorize_hwApp.swift in Sources */,
+				6D6DEADB25A1AC1F006F88EA /* ContentView.swift in Sources */,
+				6D6DEAD925A1AC1F006F88EA /* Memorize_HomeworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6D32D01325A02604001EE55D /* Debug */ = {
+		6D6DEAE225A1AC22006F88EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		6D32D01425A02604001EE55D /* Release */ = {
+		6D6DEAE325A1AC22006F88EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,44 +262,44 @@
 			};
 			name = Release;
 		};
-		6D32D01625A02604001EE55D /* Debug */ = {
+		6D6DEAE525A1AC22006F88EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize_hw/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorize_Homework/Preview Content\"";
 				DEVELOPMENT_TEAM = M49279RC83;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Memorize_hw/Info.plist;
+				INFOPLIST_FILE = Memorize_Homework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sckimynwa.Memorize-hw";
+				PRODUCT_BUNDLE_IDENTIFIER = "sckimynwa.Memorize-Homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6D32D01725A02604001EE55D /* Release */ = {
+		6D6DEAE625A1AC22006F88EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize_hw/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorize_Homework/Preview Content\"";
 				DEVELOPMENT_TEAM = M49279RC83;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Memorize_hw/Info.plist;
+				INFOPLIST_FILE = Memorize_Homework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sckimynwa.Memorize-hw";
+				PRODUCT_BUNDLE_IDENTIFIER = "sckimynwa.Memorize-Homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,25 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6D32D00125A02603001EE55D /* Build configuration list for PBXProject "Memorize_hw" */ = {
+		6D6DEAD025A1AC1F006F88EA /* Build configuration list for PBXProject "Memorize_Homework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6D32D01325A02604001EE55D /* Debug */,
-				6D32D01425A02604001EE55D /* Release */,
+				6D6DEAE225A1AC22006F88EA /* Debug */,
+				6D6DEAE325A1AC22006F88EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D32D01525A02604001EE55D /* Build configuration list for PBXNativeTarget "Memorize_hw" */ = {
+		6D6DEAE425A1AC22006F88EA /* Build configuration list for PBXNativeTarget "Memorize_Homework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6D32D01625A02604001EE55D /* Debug */,
-				6D32D01725A02604001EE55D /* Release */,
+				6D6DEAE525A1AC22006F88EA /* Debug */,
+				6D6DEAE625A1AC22006F88EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6D32CFFE25A02603001EE55D /* Project object */;
+	rootObject = 6D6DEACD25A1AC1F006F88EA /* Project object */;
 }
