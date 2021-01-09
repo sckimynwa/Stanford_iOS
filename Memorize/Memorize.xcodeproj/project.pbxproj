@@ -66,10 +66,10 @@
 			children = (
 				6D280927259F51F50029ED83 /* MemorizeApp.swift */,
 				6D280929259F51F50029ED83 /* EmojiMemoryGameView.swift */,
-				6D6DEAC025A16B40006F88EA /* Grid.swift */,
-				6D6DEAC325A1714C006F88EA /* GridLayout.swift */,
 				6D32CFDE25A001CA001EE55D /* EmojiMemoryGame.swift */,
 				6D32CFDB25A0005B001EE55D /* MemoryGame.swift */,
+				6D6DEAC025A16B40006F88EA /* Grid.swift */,
+				6D6DEAC325A1714C006F88EA /* GridLayout.swift */,
 				6D6DEAC925A187EE006F88EA /* Array+Only.swift */,
 				6D6DEAC625A1740C006F88EA /* Array+Identifiable.swift */,
 				6D28092B259F51F70029ED83 /* Assets.xcassets */,
