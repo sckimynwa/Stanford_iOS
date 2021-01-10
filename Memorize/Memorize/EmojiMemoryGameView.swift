@@ -45,7 +45,7 @@ struct CardView: View {
     
     @ViewBuilder
     var body: some View {
-        if card .isFaceUp || !card.isMatched {
+        if card.isFaceUp || !card.isMatched {
             GeometryReader { geometry in
                 ZStack{
                     Group {

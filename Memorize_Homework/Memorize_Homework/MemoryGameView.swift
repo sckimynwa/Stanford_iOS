@@ -16,7 +16,9 @@ struct MemoryGameView: View {
             ScoreView(score: viewModel.score)
             Grid(viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
-                    viewModel.choose(card: card)
+                    withAnimation(.linear(duration:2)) {
+                        viewModel.choose(card: card)
+                    }
                 }
                 .padding(5)
             }
@@ -54,14 +56,17 @@ struct CardView: View {
     var card: MemoryGame<String>.Card
     
     var body: some View {
-        GeometryReader { geometry in
-            ZStack(content: {
-                if card.isFaceUp {
+        if card.isFaceUp || !card.isMatched {
+            GeometryReader { geometry in
+                ZStack(content: {
                     Text(card.content)
-                }
-            })
-            .font(Font.system(size: fontSize(for: geometry.size)))
-            .cardify(isFaceUp: card.isFaceUp)
+                        .font(Font.system(size: fontSize(for: geometry.size)))
+                        .rotationEffect(Angle.degrees(card.isMatched ? 360 : 0))
+                        .animation(card.isMatched ? Animation.linear(duration: 1.5).repeatForever(autoreverses: false): .default)
+                })
+                .cardify(isFaceUp: card.isFaceUp)
+                .transition(AnyTransition.scale)
+            }
         }
     }
     
@@ -79,8 +84,9 @@ struct FooterView: View {
         HStack {
             Spacer()
             Button(action: {
-                print("Button Clicked!")
-                resetGame()
+                withAnimation(.easeInOut(duration:1.5)) {
+                    resetGame()
+                }
             }){ Text("New Game")}
                 .padding(.trailing, 30)
                 .padding(.bottom, 30)
